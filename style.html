@@ -8,22 +8,68 @@
     <!-- internal stylesheet -->
     <style>
         h2 {
-            color: gold;
-            background-color: darkred;
+            text-align: center;
+            margin: 30px;
+            padding: 35px;
+            color: rgb(217, 211, 179);
+            background-color: rgb(239, 54, 54);
+            border-style:double;
+            border-radius: 50%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: x-large;
+            font-weight:500;
+            line-height: 30px;
+
         }
+        /* flex box */
+        .container{
+            display: flex;
+            justify-content:center;
+            flex-direction:row;
+            /* gap: 100px; */
+            
+        }
+
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin: 10px;
+            text-align: center;
+            background-color: blue;
+            color: white;
+            border-radius: 50%;
+        }
+
+        /* grid */
+        .cont-grid{
+            display: grid;
+            /grid-template-columns: 25px 25px 25px;
+            grid-template-rows: 30px 30px 30px;
+             justify-items: center; 
+            /* border: 1px solid rgb(66, 21, 180); */
+            margin:30px;
+            padding-bottom: 80px;
+        }
+        .grid-items{
+             height: 200px;
+            width: 100px; 
+            border: 2px solid rgb(220, 14, 14);
+            background-color: chartreuse;
+
+        }
+        
     </style>
-
     <LINK rel="stylesheet" href="stylesheet.css">
-
 </head>
 <body>
 
     <!-- inline stylesheet -->
 
-    <h1 style="color: blue;background-color: rgb(203, 167, 167);">Hello World!</h1>
+    <p style="line-height: 35px;color: rgb(14, 14, 27);background-color: rgb(203, 167, 167); margin: 40px; padding: 40px; text-align:center;border-radius:80%;"><b>Hello World!</b></p>
     <hr>
-    <h2><b><i>Akash Yadav</i></h2>
-    <h3><p> 
+    <h2><b><i>Akash Yadav (CSE-12)</i></h2>
+    <h3><p>
             <label>Course: </label> 
             <select name="course" required> 
                 <option value="">-- Select Course --</option> 
@@ -33,10 +79,27 @@
                 <option value="mca">MCA</option> 
             </select> 
         </p> </h3>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>  
+    <div class="cont-grid">
+        <div class="grid-itemsone"></div>
+        <div class="grid-itemstwo"></div>
+        <div class="grid-itemsthree"></div>
+        <div class="grid-itemsfourth"></div>
+        <div class="grid-itemsfive"></div>
+        <div class="grid-items"></div>
+        <div class="grid-items"></div>
+        <div class="grid-items"></div>
+        <div class="grid-items"></div>
+    </div>
     
     <h4>ABES ENGENNERING COLLAGE</h4>
     <hr>
-    <button style="color:  rgb(255, 255, 255); background-color:rgb(0, 0, 0);">Submit here</button>
+    <button style="color:  rgb(255, 255, 255); background-color:rgb(91, 53, 53);padding: 5px;;">Submit here</button>
 
 </body>
 </html>
