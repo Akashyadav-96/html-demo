@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            justify-content: center;
+            border: 2px solid black;
+            color: blue;
+            background-color: cornsilk;
+            margin: 8px;
+    
+        }
+        .container1{
+            height: 30px;
+            width: 30px;
+            
+        }
+        .nav{
+            border: 2px solid black;
+            display: grid;
+            justify-content: center ;
+            height: 20px;
+            margin: 8px;
+            background-color: yellow;
+            gap: 50px;
+            
+        }
+        .box{
+            float: left;
+            width: 150px;
+            height: 200px;  
+            border: 2px solid black;
+            grid-area: content;
+        }     
+        #box3{
+            display: grid;
+            text-decoration: underline;
+            justify-content: center;
+            color:chocolate;
+            clear: both;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="container1">
+            Website
+        </h2></div>
+        <div class="nav">
+            <nav>
+                <a href="home">Home</a>
+                <a href="menu">Menu</a>
+                <a href="myaccount">My Account</a>
+                <a href="mycart">My Cart</a>
+            </nav>
+        </div>
+        <div class="box">
+            <img src="photo.jpg">
+        </div>
+        <div id="box1">
+            <p>This is my website in which header , Navigation bar , content , side menu in which image was inserted.</p>
+        </div>
+        <div id="box2">
+            <p>In this website we use grid for making website for attractive.</p>
+        </div>
+        <div id="box3">
+            <h2>Thanks for visiting the website.</h2>
+        </div>
+    </div>  
+</body>
+</html>
+
